@@ -1,3 +1,4 @@
 .venv
 notpx.session
 NotPixel_log.log
+__pycache__
