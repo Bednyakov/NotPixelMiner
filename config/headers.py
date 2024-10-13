@@ -1,0 +1,16 @@
+headers = {
+                'Accept': 'application/json, text/plain, */*',
+                'Accept-Language': 'ru,en-US;q=0.9,en;q=0.8',
+                'Accept-Encoding': 'gzip, deflate, br, zstd',
+                'Content-Type': 'application/json',
+                'Origin': 'https://app.notpx.app',
+                'Referer': 'https://app.notpx.app/',
+                'priority': 'u=1, i',
+                'Sec-Fetch-Dest': 'empty',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Site': 'same-site',
+                'Sec-Ch-Ua': '"Chromium";v="128", "Not;A=Brand";v="24", "Microsoft Edge";v="128", "Microsoft Edge WebView2";v="128"',
+                'Sec-Ch-Ua-mobile': '?0',
+                'Sec-Ch-Ua-platform': '"Android"',
+                'User-Agent': 'Mozilla/5.0 (Linux; Android 12; SM-G975F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.133 Mobile Safari/537.36',
+            }
