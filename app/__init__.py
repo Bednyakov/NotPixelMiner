@@ -1,5 +1,5 @@
-from dotenv import load_dotenv
 from random import randint, choice
+from dotenv import load_dotenv
 from time import sleep
 import os
 
@@ -7,9 +7,13 @@ from .claim import get_status, claim
 from config import get_headers, headers
 from logger import logger
 
+load_dotenv()
 
-API_ID = os.getenv('API_ID', 'default_API_ID_if_not_set')
-API_HASH = os.getenv('API_HASH', 'default_API_HASH_not_set')
+API_ID = os.getenv('API_ID')
+API_HASH = os.getenv('API_HASH')
+
+if not API_ID or not API_HASH:
+    raise ValueError("API_ID и API_HASH не подгрузились!")
 
 def main():
     while True:
