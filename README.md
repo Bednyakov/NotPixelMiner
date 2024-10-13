@@ -18,6 +18,8 @@ Linux:
 ```
 chmod +x run.sh
 ```
+```
+./run.sh
 
 ### При необходимости заголовки можно изменить: config -> headers.py
 
