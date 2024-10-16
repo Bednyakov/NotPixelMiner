@@ -46,3 +46,19 @@ def claim(payload: dict, headers: dict) -> dict|None:
 
         logger.info(f"{response.status_code} Повторно закрашиваю пиксель...")
     logger.error(f"Ошибка claim: {response.status_code}")
+
+
+def get_pixel_ids(top_left: int, bottom_right: int) -> list:
+    top_left_x = (top_left - 1) % 1000
+    top_left_y = (top_left - 1) // 1000
+    bottom_right_x = (bottom_right - 1) % 1000
+    bottom_right_y = (bottom_right - 1) // 1000
+    
+    pixel_ids = []
+    
+    for y in range(top_left_y, bottom_right_y + 1):
+        for x in range(top_left_x, bottom_right_x + 1):
+            pixel_id = y * 1000 + x + 1
+            pixel_ids.append(pixel_id)
+            
+    return pixel_ids

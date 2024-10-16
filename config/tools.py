@@ -49,20 +49,6 @@ async def get_token(client: TelegramClient) -> str:
     token = data.replace(user_data,unquote(user_data))
     return token
 
-    # parsed_url = urlparse(webview_url)
-    # query = parse_qs(parsed_url.fragment)
-
-    # tg_web_app_data = query['tgWebAppData'][0]
-    # decoded_data = unquote(tg_web_app_data)
-
-    # elements = parse_qs(decoded_data)
-    # user_encoded = urllib.parse.quote(json.dumps(elements['user'], separators=(',', ':')))
-    # print(elements.keys())
-
-    # token = f"user={elements['user'][0]}&auth_date={elements['auth_date'][0]}&hash={elements['hash'][0]}"
-
-    # return token
-
 
 def get_headers(headers: dict, api_id: str, api_hash: str) -> dict:    
     client = TelegramClient("notpx", api_id, api_hash).start()
