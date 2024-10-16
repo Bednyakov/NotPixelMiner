@@ -42,5 +42,5 @@ def main():
             sleep(randint(605, 3650))
         
         break_count -= 1
-        
-    logger.error("Превышено число попыток подклбчения к клиенту Telegram.")
+
+    logger.error("Превышено число попыток подключения к клиенту Telegram.")
